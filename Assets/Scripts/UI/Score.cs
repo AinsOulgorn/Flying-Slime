@@ -9,6 +9,11 @@ public class Score : MonoBehaviour
     [SerializeField] private TMP_Text _score;
 
 
+    private void Awake()
+    {
+        _score.outlineWidth = 0.2f;
+        _score.outlineColor = new Color32(0, 0, 0, 255);
+    }
 
 
     private void OnEnable()
