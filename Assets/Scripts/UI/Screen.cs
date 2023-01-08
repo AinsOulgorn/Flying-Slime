@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,11 @@ public abstract class Screen : MonoBehaviour
     [SerializeField] protected GameObject _buttonStartEnd; 
     [SerializeField] protected GameObject _screen;
     [SerializeField] protected GameObject _slimePush;
+    [SerializeField] protected GameObject _score;
+    [SerializeField] protected Bird _bird;
+    [SerializeField] protected TMP_Text _scoreInt;
+    [SerializeField] protected TMP_Text _scoreMax;
+
 
 
 

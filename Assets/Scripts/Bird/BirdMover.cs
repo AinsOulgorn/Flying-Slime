@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BirdMover : MonoBehaviour
@@ -10,6 +11,8 @@ public class BirdMover : MonoBehaviour
     [SerializeField] private float _tapForce = 10;
     [SerializeField] private AudioSource _birdSound;
     [SerializeField] private AudioClip _soundJump;
+    [SerializeField] private Button _buttonFly;
+
 
     private Rigidbody2D _rigidbody2D;
 
@@ -35,10 +38,6 @@ public class BirdMover : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-
-    }
 
     public void ResetBird()
     {

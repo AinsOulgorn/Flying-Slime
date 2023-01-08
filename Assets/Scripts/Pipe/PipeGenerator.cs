@@ -22,7 +22,7 @@ public class PipeGenerator : ObjectPool
     {
         _elapsedTime += Time.deltaTime;
 
-        if(_elapsedTime > _secondsBetweenSpawn)
+        if (_elapsedTime > _secondsBetweenSpawn)
         {
             if(TryGetObject(out GameObject pipe))
             {

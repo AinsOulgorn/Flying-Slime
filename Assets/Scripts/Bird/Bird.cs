@@ -11,10 +11,11 @@ public class Bird : MonoBehaviour
     [SerializeField] private AudioClip _death;
 
 
-    private int _maxScore = 0;
+
 
     private BirdMover _mover;
-    private int _score;
+    public int _score;
+    public int _scoreMaxInt;
 
     public event UnityAction GameOver;
     public event UnityAction<int> ScoreChanged;
@@ -41,10 +42,6 @@ public class Bird : MonoBehaviour
     }
     public void Die()
     {
-        if(_score > _maxScore)
-        {
-            _maxScore = _score;
-        }
         _scoreSound.PlayOneShot(_death);
         GameOver?.Invoke();
 

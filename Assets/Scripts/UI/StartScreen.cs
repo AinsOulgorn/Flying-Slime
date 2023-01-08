@@ -16,6 +16,7 @@ public class StartScreen : Screen
         _buttonStartEnd.SetActive(false);
         _screen.SetActive(false);
         _slimePush.SetActive(true);
+        _bird._scoreMaxInt = Progress.Instance.PlayerInfo._record;
     }
 
     public override void Open()
