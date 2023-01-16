@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class StartScreen : Screen
+public class StartScreen : ScreenGame
 {
     public event UnityAction PlayButtonClick;
 
@@ -16,7 +16,7 @@ public class StartScreen : Screen
         _buttonStartEnd.SetActive(false);
         _screen.SetActive(false);
         _slimePush.SetActive(true);
-        _bird._scoreMaxInt = Progress.Instance.PlayerInfo._record;
+
     }
 
     public override void Open()
