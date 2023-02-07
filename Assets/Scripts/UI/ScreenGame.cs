@@ -18,6 +18,7 @@ public abstract class ScreenGame : MonoBehaviour
     [SerializeField] protected TMP_Text _scoreInt;
     [SerializeField] protected TMP_Text _scoreMax;
     [SerializeField] protected SaveProgress _saveProgress;
+    [SerializeField] protected GameObject _rateGamesButton;
 
 
 

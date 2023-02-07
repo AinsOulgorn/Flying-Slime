@@ -19,8 +19,6 @@ public class GameOverScreen : ScreenGame
         _buttonStartEnd.SetActive(false);
         _screen.SetActive(false);
         _slimePush.SetActive(true);
-  
-
 
     }
 
@@ -33,6 +31,8 @@ public class GameOverScreen : ScreenGame
         _screen.SetActive(true);
         _slimePush.SetActive(false);
         _scoreInt.text = _bird._score.ToString();
+
+ 
 
 
 
